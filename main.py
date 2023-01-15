@@ -22,9 +22,7 @@ def sum_square(*args, **kwargs):
         all_numbers.append(i)
 
     for num in all_numbers:
+        num = int(num)            #тут же можно не использовать try?
         result += pow(num, 2)
 
     return result
-
-
-print(sum_square(1, 2, 3, a=2))
